@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  background: url(img/pinboard.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.nav-wrapper {
+  text-align: center;
+}
+
+.todo-container {
+  margin: 100px auto 0;
+  background: url(img/paper.jpg);
+  width: 400px;
+  height: 500px;
+  box-shadow: 12px 12px 24px #000;
+}
+
+.todo-container > img {
+  width: 50px; 
+}
+
+.todo-list {
+  overflow: auto;
+  margin-top: 5px;
+}
+
+.todo-list > li {
+  margin-top: 5px;
+  position: relative;
+}
+
+.todo-list > li > p {
+  width: 75%;
+  margin: 10px 0;
+  word-wrap: break-word;
+}
+
+.icons {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.my-icon {
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+}
+
+.check-icon {
+  color: #f00;
+}
+
+.check-icon:hover {
+  color: #38A938;
+}
+
+.delete-icon {
+  color: #7f7f7f;
+}
+
+.delete-icon:hover {
+  color: #0f0f0f;
+}
+
+@media screen and (max-width: 500px) {
+  .todo-container {
+    width: 240px;
+    height: 340px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .todo-container > img {
+    width: 35px;
+  }
+
+  .todo-list {
+    padding-left: 30px;
+  }
+
+  .my-icon {
+    font-size: 20px;
+  }
+
+  .icons {
+    right: 0;
+  }
+}

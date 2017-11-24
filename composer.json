@@ -1,0 +1,6 @@
+{
+    "name": "damian/todo-list",
+    "description": "Todo list application that everyone shares.",
+    "type": "project",
+    "require": {}
+}
