@@ -3,14 +3,14 @@
   require "config/config.php";
 
   if(isset($_POST['submit'])) {
-    $todo = mysqli_real_escape_string($conn, $_POST["todo"]);
+    $todo = $conn->mysqli_real_escape_string($_POST["todo"]);
   
     $query = "INSERT INTO todo(todo) VALUES('$todo')";
 
-    if(mysqli_query($conn, $query)) {
+    if($conn->mysqli_query($query)) {
       header('Location' . ROOT_URL);
     } else {
-      echo 'Error: ' . mysqli_error($conn);
+      echo 'Error: ' . $conn->mysqli_error;
     }
     echo "<meta http-equiv='refresh' content='0'>";
   }
